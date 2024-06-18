@@ -45,7 +45,12 @@
 									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"id\");\r",
-									"});"
+									"});\r",
+									"pm.test(\"Response body is an array\", function () {\r",
+									"    let jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData).to.be.an('array');\r",
+									"});\r",
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
