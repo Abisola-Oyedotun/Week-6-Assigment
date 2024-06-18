@@ -804,7 +804,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"Dune\",\n    \"author\": \"Roger Zelazny\",\n    \"genre\": \"fiction\",\n    \"yearPublished\": 1965\n}",
+							"raw": "{\n    \"title\": \"Dune\",\n    \"author\": \"Roger Zelazny\",\n    \"yearPublished\": 1965\n}",
 							"options": {
 								"raw": {
 									"language": "json"
