@@ -765,9 +765,9 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c3f4e9d9-a349-4d61-acf2-4683ecbc1ba3",
+								"id": "be251e85-ac20-47c1-b0db-969d88905c4f",
 								"exec": [
-									"// Fixed syntax and removed redundant test",
+									"",
 									"pm.test(\"Content-Type is present\", function () {",
 									"    pm.response.to.have.header(\"Content-Type\");",
 									"});",
@@ -779,9 +779,6 @@
 									"});",
 									"pm.test(\"Status code name has string\", function () {",
 									"    pm.response.to.have.status(\"Created\");",
-									"});",
-									"pm.sendRequest(\"https://postman-echo.com/post\", function (err, response) {",
-									"    console.log(response.json());",
 									"});",
 									"pm.test(\"Successful POST request\", function () {",
 									"    pm.expect(pm.response.code).to.be.oneOf([201]);",
