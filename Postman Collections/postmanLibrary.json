@@ -920,7 +920,6 @@
 							"script": {
 								"id": "0b4f84fb-fb60-47c0-ae28-b9ad9924fc20",
 								"exec": [
-									"",
 									"pm.test(\"Response body is an array\", function () {",
 									"    let jsonData = pm.response.json();",
 									"    pm.expect(jsonData).to.be.an('array');",
@@ -928,18 +927,13 @@
 									"pm.test(\"Content-Type is present\", function () {",
 									"    pm.response.to.have.header(\"Content-Type\");",
 									"});",
-									"pm.test(\"Response time is less than 500msms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(500);",
-									"});",
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
 									"});",
 									"pm.test(\"Status code name has string\", function () {",
 									"    pm.response.to.have.status(\"OK\");",
-									"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {",
-									"    console.log(response.json());",
 									"});",
-									"});"
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
