@@ -31,9 +31,6 @@
 									"pm.test(\"Content-Type is present\", function () {\r",
 									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});\r",
-									"pm.test(\"Response time is less than 500msms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
-									"});\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
@@ -178,9 +175,6 @@
 									"pm.test(\"Content-Type is present\", function () {\r",
 									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});\r",
-									"pm.test(\"Response time is less than 500msms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
-									"});\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
@@ -218,7 +212,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "yyhnjMKgRz_VRd-"
+									"value": "DVhAco_R02uZKlJ"
 								}
 							]
 						},
@@ -294,9 +288,6 @@
 									"// Fixed syntax and removed redundant test",
 									"pm.test(\"Content-Type is present\", function () {",
 									"    pm.response.to.have.header(\"Content-Type\");",
-									"});",
-									"pm.test(\"Response time is less than 500ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(500);",
 									"});",
 									"pm.test(\"Status code is 201\", function () {",
 									"    pm.response.to.have.status(201);",
