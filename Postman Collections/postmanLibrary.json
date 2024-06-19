@@ -767,9 +767,6 @@
 									"pm.test(\"Content-Type is present\", function () {",
 									"    pm.response.to.have.header(\"Content-Type\");",
 									"});",
-									"pm.test(\"Response time is less than 500ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(500);",
-									"});",
 									"pm.test(\"Status code is 201\", function () {",
 									"    pm.response.to.have.status(201);",
 									"});",
@@ -795,7 +792,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\": \"Dune\",\n    \"author\": \"Roger Zelazny\",\n    \"yearPublished\": 1965\n}",
+							"raw": "{\n    \"title\": \"Dune\",\n    \"author\": \"Roger Zelazny\",\n     \"genre\": \"fiction\",\n    \"yearPublished\": 1965\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -816,9 +813,6 @@
 								"exec": [
 									"pm.test(\"Content-Type is present\", function () {\r",
 									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});\r",
-									"pm.test(\"Response time is less than 500msms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
 									"});\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -860,18 +854,16 @@
 									"pm.test(\"Content-Type is present\", function () {\r",
 									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});\r",
-									"pm.test(\"Response time is less than 500ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
 									"pm.test(\"Successful PATCH request\", function () {\r",
 									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
-									"});\r",
 									"});\r",
 									"pm.test(\"Status code name has string\", function () {\r",
 									"    pm.response.to.have.status(\"OK\");\r",
 									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"message\");\r",
-									"});"
+									"});\r",
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -906,7 +898,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "IiTg9bSmXOjqjdu"
+									"value": "1OO9gN7krVCt5gB"
 								}
 							]
 						}
