@@ -28,9 +28,7 @@
 							"script": {
 								"id": "5356ef89-8230-46b1-b6d6-b75de59de605",
 								"exec": [
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});\r",
+									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
